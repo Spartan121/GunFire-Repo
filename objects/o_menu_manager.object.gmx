@@ -40,23 +40,8 @@ case os_android : dir = dir_android; break;
 case os_windows : dir = "";     break;
 }
 
-if (!file_exists(dir+"game.ini"))
 {
-ini_open(dir+"game.ini");
-ini_write_real("Inf", "version", 0.4);
-ini_write_real("Inf", "Build", 12);
-ini_write_string("Inf", "ver", "TR_0.4_B12");
-ini_write_real("Graphics", "Preshadows", true);
-ini_write_real("Graphics", "PreLights", true);
-ini_write_real("Graphics", "AmbDark",   0.4);
-ini_write_real("Graphics", "LightsAlpha", 0.1);
-ini_write_real("Graphics", "Blood", true);
-ini_write_real("Graphics", "Blood_Fade", false);
-ini_write_real("Graphics", "flash",true );
-ini_write_real("Graphics", "RTShadows", true);
-ini_write_real("Graphics", "Casing",true );
-ini_write_real("Graphics", "ChrShadows",true );
-ini_close()
+scr_firsttime(dir);
 }
 
 ///Init Setting

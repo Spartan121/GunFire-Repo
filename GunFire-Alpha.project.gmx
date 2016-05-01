@@ -128,7 +128,7 @@
       <script>scripts\scr_player_shoot.gml</script>
       <script>scripts\scr_slide_move.gml</script>
     </scripts>
-    <script>scripts\create_part_type_sprite.gml</script>
+    <script>scripts\scr_firsttime.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader_default.shader</shader>
@@ -210,7 +210,9 @@
     <room>rooms\room0</room>
     <room>rooms\rm_temp</room>
   </rooms>
-  <constants number="9">
+  <constants number="11">
+    <constant name="game_build">12</constant>
+    <constant name="game_ver">0.4</constant>
     <constant name="shadow_intensity">1/8</constant>
     <constant name="wp_smg">5</constant>
     <constant name="wp_knife">0</constant>
