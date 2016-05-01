@@ -10,10 +10,10 @@
   <HTile>-1</HTile>
   <VTile>-1</VTile>
   <TextureGroups>
-    <TextureGroup0>1</TextureGroup0>
+    <TextureGroup0>3</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>590</width>
-  <height>310</height>
+  <width>977</width>
+  <height>713</height>
   <data>images\bck_menu.png</data>
 </background>

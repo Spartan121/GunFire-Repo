@@ -15,6 +15,8 @@ wp_data[# 0,9 ] =  120; //max bullets in pocket
 wp_data[# 0,10 ] =  15; //speed(optional)
 wp_data[# 0,11 ] =  200; //mass in kg :D
 wp_data[# 0,12 ] =  53; //length
+wp_data[# 0,13 ] =  s_h_akm; //dispaly pic
+
 
 
 
@@ -32,6 +34,7 @@ wp_data[# 1,9 ] =  120; //max bullets in pocket
 wp_data[# 1,10 ] =  15; //speed(optional)
 wp_data[# 1,11 ] =  200; //mass in kg :D
 wp_data[# 1,12 ] =  50; //length
+wp_data[# 1,13 ] =  s_h_m4a1; //dispaly pic
 
 
 
@@ -48,6 +51,8 @@ wp_data[# 2,9 ] =  120; //max bullets in pocket
 wp_data[# 2,10 ] =  15; //speed(optional)
 wp_data[# 2,11 ] =  200; //mass in kg :D
 wp_data[# 2,12 ] =  65; //length
+wp_data[# 2,13 ] =  s_h_m40; //dispaly pic
+
 
 
 wp_data[# 3,0 ] =  "P90"; //name
@@ -63,4 +68,5 @@ wp_data[# 3,9 ] =  120; //max bullets in pocket
 wp_data[# 3,10 ] =  15; //speed(optional)
 wp_data[# 3,11 ] =  200; //mass in kg :D
 wp_data[# 3,12 ] =  35; //length
+wp_data[# 3,13 ] =  s_h_p90; //dispaly pic
 

@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="9" enumb="8">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,19 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ui_Text(room_width/2,90,"Choose Weapon",c_white,fa_center,fa_middle,2);
-
-draw_set_font(fnt_large);
-for (var i = 0; i&lt;=3;i++){
-
-if (ui_PushButton(400,288+(i*85),500,80,wp_data[# i,0]))
-    {
-    draw_text(display_get_width()/2,display_get_height()/2,"Loading...");
-    global.player_weapon = i;
-    room_goto(room0);
-    }
-
-}
+            <string>room_goto(rm_menu);
 </string>
           </argument>
         </arguments>

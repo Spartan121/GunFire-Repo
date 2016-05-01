@@ -37,6 +37,12 @@
       <sprite>sprites\s_p90</sprite>
       <sprite>sprites\s_rem870</sprite>
       <sprite>sprites\s_akm</sprite>
+      <sprites name="Display">
+        <sprite>sprites\s_h_m4a1</sprite>
+        <sprite>sprites\s_h_m40</sprite>
+        <sprite>sprites\s_h_p90</sprite>
+        <sprite>sprites\s_h_akm</sprite>
+      </sprites>
     </sprites>
     <sprites name="Decals">
       <sprite>sprites\s_particle</sprite>
@@ -58,6 +64,7 @@
       <sprite>sprites\s_number_red</sprite>
       <sprite>sprites\s_number_green</sprite>
       <sprite>sprites\s_gui_button</sprite>
+      <sprite>sprites\s_shop_bck_bt</sprite>
       <sprite>sprites\s_gui_canvas</sprite>
       <sprites name="Game">
         <sprite>sprites\s_bt_play</sprite>
@@ -156,6 +163,7 @@
       <objects name="Buttons">
         <object>objects\o_m_play</object>
         <object>objects\o_m_quit</object>
+        <object>objects\o_m_shop</object>
       </objects>
     </objects>
     <objects name="Decals">
@@ -202,6 +210,10 @@
       <object>objects\obj_Player_Granade</object>
     </objects>
     <object>objects\o_shot</object>
+    <objects name="Shop">
+      <object>objects\o_shop</object>
+      <object>objects\o_item_bt</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
@@ -209,6 +221,7 @@
     <room>rooms\rm_weapon_selection</room>
     <room>rooms\room0</room>
     <room>rooms\rm_temp</room>
+    <room>rooms\rm_shop</room>
   </rooms>
   <constants number="11">
     <constant name="game_build">12</constant>

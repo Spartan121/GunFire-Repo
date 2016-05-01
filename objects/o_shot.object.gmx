@@ -55,9 +55,8 @@ len = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>len+=point_distance(start_x,start_y,x,y)/10;
-if (image_alpha&gt;1) instance_destroy();
-image_alpha+=0.3
+            <string>if (image_alpha&gt;1) instance_destroy();
+image_alpha+=0.55
 </string>
           </argument>
         </arguments>
@@ -80,16 +79,11 @@ image_alpha+=0.3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (os_type==os_windows){
+            <string>if (os_type==os_windows)
 draw_set_blend_mode(bm_add);
-
 draw_set_alpha(image_alpha/2);
-}
-var dir = point_direction(start_x,start_y,x,y);
-var sx = start_x+lengthdir_x(len,dir);
-var sy = start_y+lengthdir_y(len,dir);;
-
-draw_line_width_colour(sx,sy,x,y,1,c_yellow,c_yellow);
+//var dir = point_direction(start_x,start_y,x,y);
+draw_line_width_colour(start_x,start_y,x,y,1,c_yellow,c_yellow);
 //draw_sprite_ext(s_laser,0,start_x,start_y,point_distance(start_x,start_y,x,y)/44,1,point_direction(start_x,start_y,x,y),c_white,1)
 /*repeat (distance_to_point(start_x,start_y)/20)
 {

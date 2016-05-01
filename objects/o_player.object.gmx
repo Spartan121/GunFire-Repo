@@ -225,7 +225,8 @@ head_sprite = s_t_head;
           <argument>
             <kind>1</kind>
             <string>if (feet_index&gt;7) feet_index = 0;
-audio_listener_position(x,y,0);
+
+
 if (hp&lt;15)
 {
 ef_hud_message("Damage Criticall "+string(hp)+"%",c_red);
@@ -241,7 +242,7 @@ scr_slide_move(o_CollisionBox,GMSetting[? "CollRes"]);
 
 if (speed&gt;0)
 {
-feet_index+=0.25;
+feet_index+=0.3;
 alarm[4] = 5;
 }
 dir = image_angle;
@@ -285,6 +286,8 @@ if (can_shoot)
 scr_player_shoot();
 }
 }
+audio_listener_position(x,y,0);
+
 </string>
           </argument>
         </arguments>
@@ -487,10 +490,8 @@ var xx = x;
 var yy = y;
 
 if (shooting) {
-
 xx = x+lengthdir_x(-3,image_angle);
 yy = y+lengthdir_y(-3,image_angle);
-
 }
 if (ds_map_find_value(global.Engine_Settings,"g-ChrShadows")){
 draw_set_blend_mode_ext(bm_one,bm_inv_src_alpha);
