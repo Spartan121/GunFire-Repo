@@ -60,7 +60,6 @@
     <sprites name="GUI">
       <sprite>sprites\s_healthbar</sprite>
       <sprite>sprites\s_logo</sprite>
-      <sprite>sprites\sprite47</sprite>
       <sprite>sprites\s_number_red</sprite>
       <sprite>sprites\s_number_green</sprite>
       <sprite>sprites\s_gui_button</sprite>
@@ -109,6 +108,7 @@
       <script>scripts\ui_Text.gml</script>
       <script>scripts\ui_Canvas.gml</script>
       <script>scripts\ui_PushButton.gml</script>
+      <script>scripts\ui_PushButton_ext.gml</script>
       <script>scripts\ui_FloatText.gml</script>
     </scripts>
     <scripts name="Extras">

@@ -2,7 +2,7 @@
 <object>
   <spriteName>s_logo</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-55</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -30,8 +30,8 @@ application_surface_enable(true);
 
 //Set Resolution
 GM_SetResolution();
-image_xscale= 1.5;
-image_yscale = 1.5;
+image_xscale= 1;
+image_yscale = 1;
 var dir;
 
 switch (os_type)
@@ -90,13 +90,15 @@ ini_close();
             <string>//display_set_gui_size(view_wport[0],view_hport[0]);
 
 
-//if (ui_PushButton((display_get_gui_width()/2)-(350/2),(display_get_gui_height()/1.95),350,150,lang[0]))
-//room_goto(rm_selection);
+if (ui_PushButton_ext(864,650,300,60,lang[0],noone,c_white,fnt_arial,true,make_colour_rgb(46,46,46),1,false))
+room_goto(rm_selection);
+if (ui_PushButton_ext(864,650+70,300,60,"Shop",noone,c_white,fnt_arial,true,make_colour_rgb(46,46,46),1,false))
+room_goto(rm_shop);
+if (ui_PushButton_ext(864,650+70+70,300,60,"Quit",noone,c_white,fnt_arial,true,make_colour_rgb(46,46,46),1,false))
+game_end();
 //Map_Import(get_open_filename(".map|*.map",""));
 draw_set_colour(c_white);
-draw_set_font(fnt_debug);
-
-draw_set_font(fnt_arial);
+draw_set_font(fnt_debug); 
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
 draw_text(room_width/2,display_get_gui_height()-30,"TR Version 0.4 Build 12");

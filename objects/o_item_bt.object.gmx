@@ -101,9 +101,9 @@ if (select)
    {
    image_index = 1;
                
-      if (ui_PushButton(x,y+(sprite_height-100),sprite_width,100,"BUY"))
+      if (ui_PushButton(x+6,y+(sprite_height-100),sprite_width-6,99,"Buy"))
          {
-         show_message_async("You bought :"+string(wp_data[# item,0]));
+       //  show_message_async("You bought :"+string(wp_data[# item,0]));
          }
    }
    else
